@@ -1,0 +1,13 @@
+version: '3'
+services:
+  express-boilerplate:
+    container_name: 'express-boilerplate'
+    image: express-boilerplate:latest
+    build:
+      context: '.'
+      dockerfile: './Dockerfile'
+    env_file: './.env'
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./build:/build"

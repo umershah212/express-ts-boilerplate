@@ -1,0 +1,64 @@
+{
+  "extends": ["prettier", "plugin:prettier/recommended", "eslint:recommended", "plugin:jest/recommended", "plugin:security/recommended"],
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-unused-expressions": 2,
+    "semi": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "max-depth": ["error", 3],
+    "max-len": [
+      "error",
+      {
+        "code": 140,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": false
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": true
+        }
+      }
+    ],
+    "sort-keys-fix/sort-keys-fix": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": true
+      }
+    ]
+  },
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "globals": {
+    "preval": true,
+    "Scenario": true,
+    "Application": true,
+    "NodeJS": true,
+    "OmitOptionals": true,
+    "qs": true,
+    "Given": true,
+    "When": true,
+    "Then": true,
+    "And": true
+  },
+  "settings": {},
+  "overrides": []
+}

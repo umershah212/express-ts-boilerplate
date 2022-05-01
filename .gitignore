@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+.idea
+coverage
+yarn-error.log
+.docker
+.history
+.env
+temp
+.vscode
+.idea

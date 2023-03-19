@@ -1,2 +1,2 @@
-export { default as Hello } from './hello';
-export * from './Sockets';
+export { default as Hello } from './Hello'
+export * from './Sockets'

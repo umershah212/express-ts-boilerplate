@@ -6,7 +6,7 @@ coverage
 yarn-error.log
 .docker
 .history
-.env
 temp
 .vscode
 .idea
+config.bat
